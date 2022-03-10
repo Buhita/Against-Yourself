@@ -1,0 +1,145 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fuente Menu Principal.tres" type="DynamicFont" id=1]
+[ext_resource path="res://FondoMenuPrincipal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menu Principal.gd" type="Script" id=3]
+[ext_resource path="res://Escenas/llllll.gd" type="Script" id=4]
+[ext_resource path="res://UltimoTiempo.gd" type="Script" id=5]
+
+[node name="Menu Principal" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.552977
+margin_top = -38.4413
+margin_right = 0.552979
+margin_bottom = -38.4413
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="VBoxBotones" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -224.5
+margin_top = -3.0
+margin_right = 212.5
+margin_bottom = 437.0
+custom_constants/separation = 15
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nueva Partida" type="Button" parent="VBoxBotones"]
+margin_right = 437.0
+margin_bottom = 76.0
+custom_colors/font_color_hover = Color( 0.188235, 0.996078, 0.921569, 1 )
+custom_colors/font_color_pressed = Color( 0.243137, 0.286275, 0.764706, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Nueva Partida"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cargar Partida" type="Button" parent="VBoxBotones"]
+margin_top = 91.0
+margin_right = 437.0
+margin_bottom = 167.0
+custom_colors/font_color_hover = Color( 0.188235, 0.996078, 0.921569, 1 )
+custom_colors/font_color_pressed = Color( 0.243137, 0.286275, 0.764706, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Cargar Partida"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Borrar Partida" type="Button" parent="VBoxBotones"]
+margin_top = 182.0
+margin_right = 437.0
+margin_bottom = 258.0
+custom_colors/font_color_hover = Color( 0.772549, 0.117647, 0.0823529, 1 )
+custom_colors/font_color_pressed = Color( 0.423529, 0.054902, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Borrar Partida"
+flat = true
+
+[node name="Configuración" type="Button" parent="VBoxBotones"]
+margin_top = 273.0
+margin_right = 437.0
+margin_bottom = 349.0
+custom_colors/font_color_hover = Color( 0.188235, 0.996078, 0.921569, 1 )
+custom_colors/font_color_pressed = Color( 0.243137, 0.286275, 0.764706, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Configuración"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Salir" type="Button" parent="VBoxBotones"]
+margin_top = 364.0
+margin_right = 437.0
+margin_bottom = 440.0
+custom_colors/font_color_hover = Color( 0.772549, 0.117647, 0.0823529, 1 )
+custom_colors/font_color_pressed = Color( 0.423529, 0.054902, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Salir"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
+
+[node name="llllll" type="Label" parent="."]
+margin_left = 1605.45
+margin_top = 47.4413
+margin_right = 1665.45
+margin_bottom = 64.4413
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Perfil"
+align = 1
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Perfiles" type="Button" parent="."]
+margin_left = 1511.45
+margin_top = 70.4413
+margin_right = 1703.45
+margin_bottom = 127.441
+rect_scale = Vector2( 1.7, 2 )
+custom_colors/font_color_hover = Color( 0.921569, 0.235294, 0.235294, 1 )
+custom_colors/font_color_pressed = Color( 0.701961, 0.145098, 0.145098, 1 )
+text = "Cambiar perfil"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UltimoTiempo" type="Label" parent="."]
+modulate = Color( 0.623529, 0.25098, 0.807843, 1 )
+margin_left = 595.447
+margin_top = 325.441
+margin_right = 1191.45
+margin_bottom = 395.441
+custom_fonts/font = ExtResource( 1 )
+text = "Tu último tiempo: 00:00"
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="VBoxBotones/Nueva Partida" to="." method="_on_Nueva_Partida_pressed"]
+[connection signal="pressed" from="VBoxBotones/Cargar Partida" to="." method="_on_Cargar_Partida_pressed"]
+[connection signal="pressed" from="VBoxBotones/Borrar Partida" to="." method="_on_Borrar_Partida_pressed"]
+[connection signal="pressed" from="VBoxBotones/Configuración" to="." method="_on_Configuracin_pressed"]
+[connection signal="pressed" from="VBoxBotones/Salir" to="." method="_on_Salir_pressed"]
+[connection signal="pressed" from="Perfiles" to="." method="_on_Perfiles_pressed"]
