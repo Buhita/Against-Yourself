@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/POL-galactic-trek-short.wav-6293d1dff016e492bb70c03743cd0821.sample"
+
+[deps]
+
+source_file="res://Recursos/Música/POL-galactic-trek-short.wav"
+dest_files=[ "res://.import/POL-galactic-trek-short.wav-6293d1dff016e492bb70c03743cd0821.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
