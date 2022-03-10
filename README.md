@@ -13,4 +13,6 @@ Nota:
 
 Diseño y programación: María Paz Álvarez y Brat Veroisa
 
+Personajes, suelo de instancias, música y sfx: obtenidos de la web.
+
 Video de presentación del funcionamiento: https://youtu.be/ZJ_3Kary7_c
