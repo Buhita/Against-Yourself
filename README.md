@@ -10,3 +10,7 @@ Nota:
 -Usuario y contraseña gestión de cuentas: gestor
 
 -Ubicación de saves: C:\Usuarios\ *Nombre_usuario* \AppData\Roaming\Godot\app_userdata\Against Yourself
+
+Autores: María Paz Álvarez y Brat Veroisa
+
+Video de presentación del funcionamiento: https://youtu.be/ZJ_3Kary7_c
