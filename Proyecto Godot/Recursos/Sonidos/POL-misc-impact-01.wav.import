@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/POL-misc-impact-01.wav-25ad4d76c84288ea0e8f91b69c562a7a.sample"
+
+[deps]
+
+source_file="res://Recursos/Sonidos/POL-misc-impact-01.wav"
+dest_files=[ "res://.import/POL-misc-impact-01.wav-25ad4d76c84288ea0e8f91b69c562a7a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
