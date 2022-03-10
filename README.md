@@ -11,6 +11,6 @@ Nota:
 
 -Ubicación de saves: C:\Usuarios\ *Nombre_usuario* \AppData\Roaming\Godot\app_userdata\Against Yourself
 
-Autores: María Paz Álvarez y Brat Veroisa
+Diseño y programación: María Paz Álvarez y Brat Veroisa
 
 Video de presentación del funcionamiento: https://youtu.be/ZJ_3Kary7_c
