@@ -17,4 +17,4 @@ Personajes, suelo de instancias, música y sfx: obtenidos de la web.
 
 Video de presentación del funcionamiento: https://youtu.be/ZJ_3Kary7_c
 
-![Pantalla Principal](https://github.com/Buhita/Biblioteca/blob/main/Pantallas%20Biblioteca/Menu%20Principal.PNG?raw=true)
+![Pantalla Principal](https://github.com/Buhita/Against-Yourself/blob/main/Menu%20Principal.png?raw=true)
