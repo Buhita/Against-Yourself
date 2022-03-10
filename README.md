@@ -6,3 +6,5 @@ Videojuego creado como proyecto de tesis para la carrera de Ingeniería en Infor
 Nota:
 
 -Se debe extraer el contenido del archivo "import.rar"
+-Usuario y contraseña gestión de cuentas: gestor
+-Ubicación de saves: C:\Usuarios\*Nombre_usuario*\AppData\Roaming\Godot\app_userdata\Against Yourself
