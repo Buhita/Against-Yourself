@@ -1,0 +1,79 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Recursos/Tiles/Right Side.png" type="Texture" id=1]
+[ext_resource path="res://Recursos/Tiles/Corner Right.png" type="Texture" id=2]
+[ext_resource path="res://Recursos/Tiles/Grass Middle Down.png" type="Texture" id=3]
+[ext_resource path="res://Recursos/Tiles/Left Side.png" type="Texture" id=4]
+[ext_resource path="res://Recursos/Tiles/Corner Left.png" type="Texture" id=5]
+[ext_resource path="res://Recursos/Tiles/Middle down.png" type="Texture" id=6]
+[ext_resource path="res://Recursos/Tiles/Grass Middle Up.png" type="Texture" id=7]
+[ext_resource path="res://Recursos/Tiles/Door Left Side.png" type="Texture" id=8]
+[ext_resource path="res://Recursos/Tiles/Corner Right Down.png" type="Texture" id=9]
+[ext_resource path="res://Recursos/Tiles/Door Down Side.png" type="Texture" id=10]
+[ext_resource path="res://Recursos/Tiles/Corner Left Down.png" type="Texture" id=11]
+[ext_resource path="res://Recursos/Tiles/Door Up Side.png" type="Texture" id=12]
+[ext_resource path="res://Recursos/Tiles/Middle.png" type="Texture" id=13]
+[ext_resource path="res://Recursos/Tiles/Door Right Side.png" type="Texture" id=14]
+[ext_resource path="res://Recursos/Tiles/black.png" type="Texture" id=15]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Corner Left Down" type="Sprite" parent="."]
+position = Vector2( 16, 112 )
+texture = ExtResource( 11 )
+
+[node name="Corner Left" type="Sprite" parent="."]
+position = Vector2( 16, 16 )
+texture = ExtResource( 5 )
+
+[node name="Corner Right Down" type="Sprite" parent="."]
+position = Vector2( 80, 112 )
+texture = ExtResource( 9 )
+
+[node name="Corner Right" type="Sprite" parent="."]
+position = Vector2( 80, 16 )
+texture = ExtResource( 2 )
+
+[node name="Door Down Side" type="Sprite" parent="."]
+position = Vector2( 112, 80 )
+texture = ExtResource( 10 )
+
+[node name="Door Left Side" type="Sprite" parent="."]
+position = Vector2( 16, 80 )
+texture = ExtResource( 8 )
+
+[node name="Door Right Side" type="Sprite" parent="."]
+position = Vector2( 80, 80 )
+texture = ExtResource( 14 )
+
+[node name="Door Up Side" type="Sprite" parent="."]
+position = Vector2( 112, 48 )
+texture = ExtResource( 12 )
+
+[node name="Grass Middle Down" type="Sprite" parent="."]
+position = Vector2( 48, 112 )
+texture = ExtResource( 3 )
+
+[node name="Grass Middle Up" type="Sprite" parent="."]
+position = Vector2( 48, 16 )
+texture = ExtResource( 7 )
+
+[node name="Left Side" type="Sprite" parent="."]
+position = Vector2( 16, 48 )
+texture = ExtResource( 4 )
+
+[node name="Middle down" type="Sprite" parent="."]
+position = Vector2( 48, 80 )
+texture = ExtResource( 6 )
+
+[node name="Middle" type="Sprite" parent="."]
+position = Vector2( 48, 48 )
+texture = ExtResource( 13 )
+
+[node name="Right Side" type="Sprite" parent="."]
+position = Vector2( 80, 48 )
+texture = ExtResource( 1 )
+
+[node name="black" type="Sprite" parent="."]
+position = Vector2( 112, 16 )
+texture = ExtResource( 15 )

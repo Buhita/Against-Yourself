@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Escenas/Cronometro.gd" type="Script" id=1]
+[ext_resource path="res://Escenas/Label.gd" type="Script" id=2]
+[ext_resource path="res://Escenas/Timer.gd" type="Script" id=3]
+[ext_resource path="res://Recursos/UI/brown_inlay.png" type="Texture" id=4]
+
+[node name="Cronometro" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -2.0
+margin_top = -4.0
+margin_right = 40.0
+margin_bottom = 12.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 0.314972
+margin_top = -1.31498
+margin_right = 40.315
+margin_bottom = 13.685
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0.231373, 0.137255, 0.137255, 1 )
+custom_colors/font_color_shadow = Color( 0.14902, 0.0352941, 0.0352941, 1 )
+text = "00:00"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+script = ExtResource( 3 )
+
+[connection signal="timeout" from="Timer" to="Label" method="toggle_visibility"]

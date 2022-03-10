@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://FuenteSalir.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Recursos/UI/tan_inlay.png" type="Texture" id=2]
+[ext_resource path="res://Escenas/UI.gd" type="Script" id=3]
+
+[node name="UI" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+anchor_left = 3.782
+anchor_top = 19.367
+anchor_right = 3.782
+anchor_bottom = 19.367
+margin_left = 464.72
+margin_top = -767.68
+margin_right = 1107.72
+margin_bottom = -684.68
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vida" type="TextureProgress" parent="BG"]
+margin_left = 17.0
+margin_top = 16.0
+margin_right = 203.0
+margin_bottom = 72.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 2 )
+tint_under = Color( 0.270588, 0.298039, 0.254902, 1 )
+tint_progress = Color( 0.607843, 0.141176, 0.141176, 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Magia" type="TextureProgress" parent="BG"]
+margin_left = 434.0
+margin_top = 15.0
+margin_right = 627.0
+margin_bottom = 72.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 2 )
+tint_under = Color( 0.262745, 0.266667, 0.298039, 1 )
+tint_progress = Color( 0.101961, 0.298039, 0.662745, 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nivel" type="Label" parent="BG"]
+margin_left = 248.579
+margin_top = 5.8709
+margin_right = 390.579
+margin_bottom = 67.8709
+custom_fonts/font = ExtResource( 1 )
+text = "Nivel"
+__meta__ = {
+"_edit_use_anchors_": false
+}

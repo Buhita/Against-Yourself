@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://FuenteSalir.tres" type="DynamicFont" id=1]
+
+[node name="Atras" type="Button"]
+margin_left = -6.82162
+margin_top = -1.00001
+margin_right = 132.178
+margin_bottom = 110.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_hover = Color( 0.298039, 0.756863, 0.788235, 1 )
+custom_colors/font_color_pressed = Color( 0.196078, 0.258824, 0.517647, 1 )
+text = "Salir"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

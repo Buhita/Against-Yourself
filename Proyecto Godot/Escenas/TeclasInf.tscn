@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="TeclasInf" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 656.363
+margin_top = 881.318
+margin_right = 1131.36
+margin_bottom = 895.318
+text = "Movimiento: A, S, D, W     Disparo: Click Izquierdo    Escudo: Click Derecho"
+__meta__ = {
+"_edit_use_anchors_": false
+}

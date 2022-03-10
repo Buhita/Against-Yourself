@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Recursos/Spritesheets/mage-3-87x110.png" type="Texture" id=1]
+[ext_resource path="res://Escenas/Jefe1.gd" type="Script" id=2]
+[ext_resource path="res://Recursos/Animaciones/AnimacionDanioEnemigo.tres" type="Animation" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 44.9993
+height = 44.7856
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 87, 110 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 87, 0, 87, 110 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 174, 0, 87, 110 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 261, 0, 87, 110 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 110, 87, 110 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 87, 110, 87, 110 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 174, 110, 87, 110 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 261, 110, 87, 110 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=11]
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.2, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1511.63, 398.775 ), Vector2( 1522.95, 385.561 ), Vector2( 1487.28, 368.912 ), Vector2( 1480.14, 333.235 ), Vector2( 1503.73, 342.11 ), Vector2( 1520.7, 339.276 ) ]
+}
+
+[node name="Jefe1" type="KinematicBody2D"]
+position = Vector2( 1511.63, 398.775 )
+scale = Vector2( 2.051, 2.087 )
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 9.78041, 9.15053 )
+scale = Vector2( 2.051, 2.087 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 8.5204, 11.0404 )
+scale = Vector2( 2.051, 2.087 )
+frames = SubResource( 10 )
+frame = 7
+playing = true
+flip_h = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/DanioE = ExtResource( 3 )
+anims/Standby = SubResource( 11 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

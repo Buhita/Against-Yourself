@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Recursos/Animaciones/disparo.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Escenas/Proyectil.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 11.4842
+
+[node name="Proyectil" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": "Capa 2: Recibe proyectiles del jugador"
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+rotation = 0.785398
+scale = Vector2( 2, 2 )
+frames = ExtResource( 1 )
+animation = "disparo"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.844693, 0.575231 )
+shape = SubResource( 9 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+collision_mask = 2
