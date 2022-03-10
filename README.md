@@ -9,4 +9,4 @@ Nota:
 
 -Usuario y contraseña gestión de cuentas: gestor
 
--Ubicación de saves: C:\Usuarios\*Nombre_usuario*\AppData\Roaming\Godot\app_userdata\Against Yourself
+-Ubicación de saves: C:\Usuarios\ *Nombre_usuario* \AppData\Roaming\Godot\app_userdata\Against Yourself
